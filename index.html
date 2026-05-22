@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio web profesional de la Lic. Andrea Otañez Varela, Nutrióloga Clínica y Funcional. Servicios personalizados de nutrición clínica, funcional e inmunológica. Agenda tu cita y mejora tu bienestar.">
+    <meta name="author" content="Lic. Andrea Otañez Varela">
+    <title>Lic. Andrea Otañez Varela | Nutrición Funcional & Clínica</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Hojas de Estilos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- CABECERA Y NAVEGACIÓN -->
+    <header class="main-header" id="header">
+        <div class="container header-container">
+            <a href="#hero" class="logo" id="main-logo">
+                <i class="fa-solid fa-seedling logo-icon"></i>
+                <span class="logo-text">Andrea Otañez <span class="logo-subtitle">Nutrición Funcional</span></span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#about" class="nav-link"><i class="fa-solid fa-user-doctor"></i> Sobre Mí</a></li>
+                    <li><a href="#services" class="nav-link"><i class="fa-solid fa-hand-holding-heart"></i> Servicios</a></li>
+                    <li><a href="#tools" class="nav-link"><i class="fa-solid fa-calculator"></i> Herramientas</a></li>
+                    <li><a href="#recipes" class="nav-link"><i class="fa-solid fa-utensils"></i> Recetario</a></li>
+                    <li><a href="#testimonials" class="nav-link"><i class="fa-solid fa-star"></i> Testimonios</a></li>
+                    <li><a href="#booking" class="nav-btn-mobile">Agendar Cita</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#booking" class="btn-primary header-cta" id="nav-cta-btn">Agendar Cita</a>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Abrir Menú">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <!-- HERO SECTION -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="badge" id="hero-badge"><i class="fa-solid fa-sparkles"></i> Nutrición Consciente & Personalizada</span>
+                    <h1 class="hero-title" id="main-hero-title">Nutrir tu cuerpo es el primer paso para sanar tu vida</h1>
+                    <p class="hero-description" id="main-hero-desc">
+                        Descubre una relación saludable y duradera con la comida a través de la nutrición funcional. Planes de alimentación creados a tu medida para optimizar tu salud, energía y rendimiento sin restricciones extremas.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#booking" class="btn-primary" id="hero-booking-btn">Comenzar Cambio <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#tools" class="btn-secondary" id="hero-tools-btn">Calcular IMC <i class="fa-solid fa-calculator"></i></a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Personalizado</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">8+ Años</span>
+                            <span class="stat-label">Experiencia</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">2k+</span>
+                            <span class="stat-label">Vidas Cambiadas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="image-wrapper">
+                        <img src="images/hero.png" alt="Ingredientes saludables y estilo de vida nutritivo" class="hero-img" id="hero-image">
+                        <!-- Floating Glassmorphic Cards -->
+                        <div class="floating-card floating-card-1">
+                            <i class="fa-solid fa-circle-check text-success"></i>
+                            <div>
+                                <span class="card-title">Nutrición Funcional</span>
+                                <span class="card-subtitle">Enfoque integral</span>
+                            </div>
+                        </div>
+                        <div class="floating-card floating-card-2">
+                            <i class="fa-solid fa-heart-pulse text-danger"></i>
+                            <div>
+                                <span class="card-title">Hábitos Sostenibles</span>
+                                <span class="card-subtitle">Sin dietas milagro</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Curve SVG separator -->
+            <div class="section-divider">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C26.9,8.75,57.05,18.3,88.43,26.85,153.25,44.53,243,69.5,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- SOBRE MÍ SECTION -->
+        <section class="about-section" id="about">
+            <div class="container about-container">
+                <div class="about-visual">
+                    <div class="about-image-wrapper">
+                        <img src="images/589919740_18549276568052851_4840800587815275267_n.jpg" alt="Lic. Andrea Otañez Varela" class="about-img" id="about-portrait">
+                        <div class="about-badge">
+                            <i class="fa-solid fa-user-doctor"></i>
+                            <span>Lic. Andrea Otañez Varela</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-subtitle">Tu Aliada en Salud</span>
+                    <h2 class="section-title">Hola, soy Andrea Otañez Varela</h2>
+                    <p class="about-bio">
+                        Soy nutrióloga clínica egresada de la Universidad Autónoma de Baja California (UABC) y especialista en nutrición funcional. Mi misión es guiarte con rigor científico y profunda empatía hacia hábitos sostenibles, sanando tu relación con la comida.
+                    </p>
+                    <div class="credentials">
+                        <div class="credential-item">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <div>
+                                <span class="cred-title">Licenciada en Nutrición</span>
+                                <span class="cred-desc">Universidad Autónoma de Baja California (UABC)</span>
+                            </div>
+                        </div>
+                        <div class="credential-item">
+                            <i class="fa-solid fa-award"></i>
+                            <div>
+                                <span class="cred-title">Certificación Internacional en Nutrición Funcional</span>
+                                <span class="cred-desc">Instituto de Medicina Funcional y Metabólica</span>
+                            </div>
+                        </div>
+                        <div class="credential-item">
+                            <i class="fa-solid fa-microscope"></i>
+                            <div>
+                                <span class="cred-title">Especialidad en Salud Digestiva & Microbiota</span>
+                                <span class="cred-desc">Asociación Mexicana de Nutrición Clínica y Metabólica</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-actions">
+                        <a href="#booking" class="btn-primary" id="about-cta-btn">Conocer mi Enfoque</a>
+                        <a href="https://www.instagram.com/_nutriandrea/" target="_blank" rel="noopener noreferrer" class="btn-secondary" id="about-ig-btn">
+                            <i class="fa-brands fa-instagram" style="color: #e1306c; margin-right: 0.5rem; font-size: 1.1rem;"></i> @_nutriandrea
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICIOS SECTION -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">¿Cómo puedo ayudarte?</span>
+                    <h2 class="section-title">Especialidades Nutricionales</h2>
+                    <p class="section-desc">Ofrezco planes personalizados diseñados científicamente para responder a tus necesidades biológicas, estilo de vida y metas personales.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Servicio 1 -->
+                    <div class="service-card" id="service-card-1">
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <h3 class="service-name">Nutrición Clínica & Funcional</h3>
+                        <p class="service-description">
+                            Tratamiento y prevención de condiciones como colitis, gastritis, diabetes, hipertensión, hipotiroidismo y desbalances hormonales mediante alimentación integradora.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Menús antiinflamatorios</li>
+                            <li><i class="fa-solid fa-check"></i> Enfoque en salud digestiva</li>
+                            <li><i class="fa-solid fa-check"></i> Suplementación personalizada</li>
+                        </ul>
+                    </div>
+
+                    <!-- Servicio 2 -->
+                    <div class="service-card" id="service-card-2">
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-bacteria"></i>
+                        </div>
+                        <h3 class="service-name">Salud Digestiva & Microbiota</h3>
+                        <p class="service-description">
+                            Tratamiento funcional para desbalances como colitis, gastritis, estreñimiento, SIBO y disbiosis intestinal para restaurar tu salud y bienestar desde el origen.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Restauración de microbiota</li>
+                            <li><i class="fa-solid fa-check"></i> Protocolo SIBO y desinflamación</li>
+                            <li><i class="fa-solid fa-check"></i> Planes alimenticios digestivos</li>
+                        </ul>
+                    </div>
+
+                    <!-- Servicio 3 -->
+                    <div class="service-card" id="service-card-3">
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-person-breastfeeding"></i>
+                        </div>
+                        <h3 class="service-name">Nutrición Hormonal & Femenina</h3>
+                        <p class="service-description">
+                            Acompañamiento nutricional en síndrome de ovario poliquístico (SOP), endometriosis, fertilidad, embarazo y etapa de lactancia.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Regulación de ciclo menstrual</li>
+                            <li><i class="fa-solid fa-check"></i> Planes para fertilidad</li>
+                            <li><i class="fa-solid fa-check"></i> Alimentación prenatal segura</li>
+                        </ul>
+                    </div>
+
+                    <!-- Servicio 4 -->
+                    <div class="service-card" id="service-card-4">
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-kitchen-set"></i>
+                        </div>
+                        <h3 class="service-name">Calidad y Asesoría Alimentaria</h3>
+                        <p class="service-description">
+                            Auditoría técnica, diseño de menús institucionales y control de higiene para comedores colectivos y empresas, asegurando los más altos estándares de inocuidad y balance nutricional.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Auditoría bajo normas de higiene</li>
+                            <li><i class="fa-solid fa-check"></i> Diseño y balance de menús masivos</li>
+                            <li><i class="fa-solid fa-check"></i> Capacitación a personal de cocina</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HERRAMIENTAS INTERACTIVAS (IMC & CALORÍAS) -->
+        <section class="tools-section" id="tools">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Herramientas de Salud</span>
+                    <h2 class="section-title">Calculadoras Interactivas</h2>
+                    <p class="section-desc">Una estimación rápida para comenzar. Recuerda que la composición corporal es mucho más que un simple número.</p>
+                </div>
+
+                <div class="tools-tabs">
+                    <button class="tab-btn active" id="tab-btn-bmi" onclick="switchTool('bmi')"><i class="fa-solid fa-calculator"></i> Calculadora de IMC</button>
+                    <button class="tab-btn" id="tab-btn-calories" onclick="switchTool('calories')"><i class="fa-solid fa-bolt"></i> Requerimiento Calórico</button>
+                </div>
+
+                <div class="tools-container">
+                    <!-- Calculadora de IMC -->
+                    <div class="tool-content active" id="tool-bmi">
+                        <div class="tool-layout">
+                            <div class="tool-inputs">
+                                <h3>Conoce tu Índice de Masa Corporal</h3>
+                                <p class="tool-help">Ingresa tu peso y estatura a continuación para obtener una estimación rápida.</p>
+                                
+                                <form id="bmi-form" onsubmit="calculateBMI(event)">
+                                    <div class="input-group-row">
+                                        <div class="input-field">
+                                            <label for="bmi-weight">Peso (kg)</label>
+                                            <div class="input-wrapper">
+                                                <input type="number" id="bmi-weight" placeholder="Ej. 70" step="0.1" min="30" max="250" required>
+                                                <span class="unit">kg</span>
+                                            </div>
+                                        </div>
+                                        <div class="input-field">
+                                            <label for="bmi-height">Estatura (cm)</label>
+                                            <div class="input-wrapper">
+                                                <input type="number" id="bmi-height" placeholder="Ej. 170" min="100" max="250" required>
+                                                <span class="unit">cm</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn-primary w-100 mt-3" id="calc-bmi-btn">Calcular Ahora <i class="fa-solid fa-angles-right"></i></button>
+                                </form>
+                            </div>
+                            <div class="tool-results" id="bmi-results-panel">
+                                <div class="result-placeholder" id="bmi-placeholder">
+                                    <i class="fa-solid fa-scale-balanced result-placeholder-icon"></i>
+                                    <p>Ingresa tus datos a la izquierda para ver el análisis de tu composición corporal básica.</p>
+                                </div>
+                                <div class="result-display hidden" id="bmi-display">
+                                    <div class="bmi-score-box">
+                                        <span class="bmi-num" id="bmi-value">22.5</span>
+                                        <span class="bmi-label">Tu IMC</span>
+                                    </div>
+                                    <div class="bmi-gauge">
+                                        <div class="gauge-bar">
+                                            <div class="gauge-marker" id="bmi-marker"></div>
+                                        </div>
+                                        <div class="gauge-labels">
+                                            <span>Bajo</span>
+                                            <span>Normal</span>
+                                            <span>Sobrepeso</span>
+                                            <span>Obesidad</span>
+                                        </div>
+                                    </div>
+                                    <h4 class="bmi-status-title" id="bmi-status">Rango Normal (Saludable)</h4>
+                                    <p class="bmi-feedback" id="bmi-feedback-text">
+                                        ¡Excelente! Tu peso se encuentra en una categoría saludable. Mantén una alimentación balanceada y actividad física constante.
+                                    </p>
+                                    <a href="#booking" class="btn-secondary w-100 mt-2">Optimizar mi Nutrición <i class="fa-solid fa-arrow-trend-up"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Calculadora de Requerimiento Calórico -->
+                    <div class="tool-content" id="tool-calories">
+                        <div class="tool-layout">
+                            <div class="tool-inputs">
+                                <h3>Gasto Energético Diario Estimado</h3>
+                                <p class="tool-help">Conoce aproximadamente cuántas calorías requiere tu cuerpo para mantener su peso actual según tu nivel de actividad diaria.</p>
+                                
+                                <form id="calories-form" onsubmit="calculateCalories(event)">
+                                    <div class="input-group-row">
+                                        <div class="input-field">
+                                            <label for="cal-gender">Género</label>
+                                            <select id="cal-gender" required>
+                                                <option value="female">Femenino</option>
+                                                <option value="male">Masculino</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-field">
+                                            <label for="cal-age">Edad (años)</label>
+                                            <input type="number" id="cal-age" placeholder="Ej. 28" min="15" max="100" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="input-group-row mt-2">
+                                        <div class="input-field">
+                                            <label for="cal-weight">Peso actual (kg)</label>
+                                            <input type="number" id="cal-weight" placeholder="Ej. 65" min="30" max="200" required>
+                                        </div>
+                                        <div class="input-field">
+                                            <label for="cal-height">Estatura (cm)</label>
+                                            <input type="number" id="cal-height" placeholder="Ej. 165" min="100" max="220" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="input-field mt-2">
+                                        <label for="cal-activity">Nivel de Actividad</label>
+                                        <select id="cal-activity" required>
+                                            <option value="1.2">Sedentario (Poco o nada de ejercicio)</option>
+                                            <option value="1.375">Ligero (Ejercicio 1-3 días a la semana)</option>
+                                            <option value="1.55">Moderado (Ejercicio 3-5 días a la semana)</option>
+                                            <option value="1.725">Intenso (Ejercicio 6-7 días a la semana)</option>
+                                        </select>
+                                    </div>
+
+                                    <button type="submit" class="btn-primary w-100 mt-3" id="calc-cal-btn">Calcular Requerimiento <i class="fa-solid fa-bolt"></i></button>
+                                </form>
+                            </div>
+                            <div class="tool-results" id="calories-results-panel">
+                                <div class="result-placeholder" id="calories-placeholder">
+                                    <i class="fa-solid fa-bolt result-placeholder-icon"></i>
+                                    <p>Completa los campos metabólicos para estimar tu tasa metabólica basal y necesidades energéticas.</p>
+                                </div>
+                                <div class="result-display hidden" id="calories-display">
+                                    <div class="calorie-score-box">
+                                        <span class="calorie-num" id="calories-val">1,950</span>
+                                        <span class="calorie-label">kcal / día estimadas</span>
+                                    </div>
+                                    
+                                    <div class="macro-distribution">
+                                        <h4>Sugerencia de Distribución de Macronutrientes</h4>
+                                        <div class="macro-bars">
+                                            <div class="macro-bar-item">
+                                                <div class="macro-header">
+                                                    <span>Carbohidratos (45%)</span>
+                                                    <span id="carb-g">219g</span>
+                                                </div>
+                                                <div class="macro-progress"><div class="progress-fill fill-carbs"></div></div>
+                                            </div>
+                                            <div class="macro-bar-item">
+                                                <div class="macro-header">
+                                                    <span>Proteínas (25%)</span>
+                                                    <span id="protein-g">122g</span>
+                                                </div>
+                                                <div class="macro-progress"><div class="progress-fill fill-proteins"></div></div>
+                                            </div>
+                                            <div class="macro-bar-item">
+                                                <div class="macro-header">
+                                                    <span>Grasas Saludables (30%)</span>
+                                                    <span id="fat-g">65g</span>
+                                                </div>
+                                                <div class="macro-progress"><div class="progress-fill fill-fats"></div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <p class="calories-disclaimer">
+                                        <i class="fa-solid fa-triangle-exclamation"></i> Esta distribución es estimada. Un plan nutricional personalizado ajusta estos números según objetivos específicos de salud, saciedad y adaptaciones de tu estilo de vida.
+                                    </p>
+                                    <a href="#booking" class="btn-secondary w-100 mt-2">Crear mi Plan Personalizado</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPLORADOR DE RECETAS SALUDABLES -->
+        <section class="recipes-section" id="recipes">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Nutrición Sin Aburrimiento</span>
+                    <h2 class="section-title">Explorador de Recetas Saludables</h2>
+                    <p class="section-desc">Comer bien es delicioso. Disfruta de esta selección de platillos prácticos y llenos de nutrientes diseñados por mí.</p>
+                </div>
+
+                <!-- Filtros de Recetas -->
+                <div class="recipe-filters">
+                    <button class="filter-btn active" onclick="filterRecipes('all')">Todas</button>
+                    <button class="filter-btn" onclick="filterRecipes('desayuno')">Desayunos</button>
+                    <button class="filter-btn" onclick="filterRecipes('almuerzo')">Almuerzos</button>
+                    <button class="filter-btn" onclick="filterRecipes('postre')">Snacks & Postres</button>
+                </div>
+
+                <!-- Grid de Recetas -->
+                <div class="recipes-grid" id="recipes-grid">
+                    <!-- Receta 1 -->
+                    <div class="recipe-card" data-category="desayuno" onclick="openRecipeModal(0)">
+                        <div class="recipe-image">
+                            <span class="recipe-tag">Desayuno</span>
+                            <div class="recipe-img-placeholder" style="background-image: linear-gradient(135deg, #4A6B56, #2C5E43);">
+                                <i class="fa-solid fa-bowl-food"></i>
+                            </div>
+                        </div>
+                        <div class="recipe-info">
+                            <h3 class="recipe-title">Bowl de Avena con Frutos Rojos y Chía</h3>
+                            <p class="recipe-excerpt">Un desayuno lleno de fibra, antioxidantes y grasas saludables para iniciar el día con máxima energía.</p>
+                            <div class="recipe-meta">
+                                <span><i class="fa-regular fa-clock"></i> 10 min</span>
+                                <span><i class="fa-solid fa-fire"></i> 320 kcal</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Receta 2 -->
+                    <div class="recipe-card" data-category="almuerzo" onclick="openRecipeModal(1)">
+                        <div class="recipe-image">
+                            <span class="recipe-tag">Almuerzo</span>
+                            <div class="recipe-img-placeholder" style="background-image: linear-gradient(135deg, #D9886C, #2C5E43);">
+                                <i class="fa-solid fa-plate-wheat"></i>
+                            </div>
+                        </div>
+                        <div class="recipe-info">
+                            <h3 class="recipe-title">Salmón Glaseado con Ensalada de Quinoa</h3>
+                            <p class="recipe-excerpt">Una comida rica en omega-3, proteínas magras y carbohidratos complejos para una óptima saciedad.</p>
+                            <div class="recipe-meta">
+                                <span><i class="fa-regular fa-clock"></i> 25 min</span>
+                                <span><i class="fa-solid fa-fire"></i> 480 kcal</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Receta 3 -->
+                    <div class="recipe-card" data-category="postre" onclick="openRecipeModal(2)">
+                        <div class="recipe-image">
+                            <span class="recipe-tag">Snack</span>
+                            <div class="recipe-img-placeholder" style="background-image: linear-gradient(135deg, #E0B86F, #D9886C);">
+                                <i class="fa-solid fa-cookie"></i>
+                            </div>
+                        </div>
+                        <div class="recipe-info">
+                            <h3 class="recipe-title">Muffins Fit de Plátano y Avena</h3>
+                            <p class="recipe-excerpt">El antojo dulce perfecto, libre de azúcares refinadas y lleno de sabor natural para tus tardes.</p>
+                            <div class="recipe-meta">
+                                <span><i class="fa-regular fa-clock"></i> 20 min</span>
+                                <span><i class="fa-solid fa-fire"></i> 140 kcal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIOS SECTION -->
+        <section class="testimonials-section" id="testimonials">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Casos de Éxito</span>
+                    <h2 class="section-title">Testimonios de Pacientes</h2>
+                    <p class="section-desc">Historias reales de personas que transformaron su relación con la alimentación y recuperaron su vitalidad.</p>
+                </div>
+
+                <div class="testimonials-slider-container">
+                    <div class="testimonial-slider" id="testimonial-slider">
+                        <!-- Testimonio 1 -->
+                        <div class="testimonial-item active">
+                            <div class="testimonial-card">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="testimonial-text">
+                                    "Llegué con la Lic. Andrea después de años sufriendo colitis severa y probando mil dietas restrictivas. Con su enfoque de nutrición funcional, mi digestión mejoró un 90% en solo un mes. ¡Volví a comer feliz y sin inflamación!"
+                                </p>
+                                <div class="patient-info">
+                                    <div class="patient-avatar" style="background-color: #4A6B56;">M</div>
+                                    <div>
+                                        <h4 class="patient-name">Mariana Gómez</h4>
+                                        <span class="patient-goal">Objetivo: Salud Gastrointestinal</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonio 2 -->
+                        <div class="testimonial-item">
+                            <div class="testimonial-card">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="testimonial-text">
+                                    "Andrea cambió por completo mi rendimiento deportivo. Sus consejos de nutrición e hidratación pre y post-entrenamiento me permitieron terminar mi primer maratón sintiéndome fuerte de principio a fin."
+                                </p>
+                                <div class="patient-info">
+                                    <div class="patient-avatar" style="background-color: #D9886C;">R</div>
+                                    <div>
+                                        <h4 class="patient-name">Ricardo Santos</h4>
+                                        <span class="patient-goal">Objetivo: Rendimiento Maratón</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonio 3 -->
+                        <div class="testimonial-item">
+                            <div class="testimonial-card">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="testimonial-text">
+                                    "Tengo Síndrome de Ovario Poliquístico y me costaba mucho regular mis ciclos y mi energía. Andrea me guió con alimentos específicos y suplementos que devolvieron el equilibrio a mis hormonas de forma natural."
+                                </p>
+                                <div class="patient-info">
+                                    <div class="patient-avatar" style="background-color: #E0B86F;">S</div>
+                                    <div>
+                                        <h4 class="patient-name">Sofía Herrera</h4>
+                                        <span class="patient-goal">Objetivo: Control de SOP</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="slider-controls">
+                        <button class="slider-arrow" id="prev-btn" onclick="prevTestimonial()"><i class="fa-solid fa-chevron-left"></i></button>
+                        <div class="slider-dots" id="slider-dots">
+                            <span class="dot active" onclick="goToTestimonial(0)"></span>
+                            <span class="dot" onclick="goToTestimonial(1)"></span>
+                            <span class="dot" onclick="goToTestimonial(2)"></span>
+                        </div>
+                        <button class="slider-arrow" id="next-btn" onclick="nextTestimonial()"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BOOKING / AGENDA SIMULATOR -->
+        <section class="booking-section" id="booking">
+            <div class="container booking-container">
+                <div class="booking-info">
+                    <span class="section-subtitle">Reserva de Consultas</span>
+                    <h2 class="section-title text-light">Da el primer paso hoy</h2>
+                    <p class="booking-text">
+                        Agenda tu sesión de valoración en línea o presencial. Comencemos a trazar el plan nutricional y de hábitos que cambiará tu vida.
+                    </p>
+                    
+                    <div class="booking-perks">
+                        <div class="perk-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Evaluación completa de hábitos y estilo de vida</span>
+                        </div>
+                        <div class="perk-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Menú 100% flexible y personalizado en PDF</span>
+                        </div>
+                        <div class="perk-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Soporte directo por WhatsApp para dudas diarias</span>
+                        </div>
+                    </div>
+
+                    <div class="clinic-details">
+                        <p><i class="fa-solid fa-location-dot"></i> Av. Universidad #1420, Consultorio 204. Tijuana, Baja California.</p>
+                        <p><i class="fa-solid fa-phone"></i> +52 (664) 123-4567</p>
+                        <p><i class="fa-solid fa-envelope"></i> citas@nutriandrea.com</p>
+                    </div>
+                </div>
+
+                <div class="booking-form-card">
+                    <div class="booking-form-header">
+                        <h3>Programar Cita</h3>
+                        <p>Completa el formulario para reservar tu horario.</p>
+                    </div>
+                    
+                    <form id="appointment-form" onsubmit="handleBooking(event)">
+                        <div class="input-field">
+                            <label for="book-name">Nombre Completo</label>
+                            <input type="text" id="book-name" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="input-field mt-1">
+                            <label for="book-email">Correo Electrónico</label>
+                            <input type="email" id="book-email" placeholder="correo@ejemplo.com" required>
+                        </div>
+                        <div class="input-field mt-1">
+                            <label for="book-service">Servicio Deseado</label>
+                            <select id="book-service" required>
+                                <option value="" disabled selected>Selecciona una opción</option>
+                                <option value="clinica">Nutrición Clínica & Funcional</option>
+                                <option value="digestiva">Salud Digestiva & Microbiota</option>
+                                <option value="hormonal">Nutrición Hormonal / Femenina</option>
+                                <option value="corporativa">Calidad y Asesoría Alimentaria</option>
+                            </select>
+                        </div>
+                        
+                        <div class="input-group-row mt-1">
+                            <div class="input-field">
+                                <label for="book-date">Fecha</label>
+                                <input type="date" id="book-date" required>
+                            </div>
+                            <div class="input-field">
+                                <label for="book-time">Horario</label>
+                                <select id="book-time" required>
+                                    <option value="" disabled selected>Elige hora</option>
+                                    <option value="09:00">09:00 AM</option>
+                                    <option value="10:30">10:30 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="16:00">04:00 PM</option>
+                                    <option value="17:30">05:30 PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-primary w-100 mt-2" id="submit-booking-btn">Agendar Cita en Agenda <i class="fa-solid fa-calendar-check"></i></button>
+                    </form>
+
+                    <!-- Success Message View (Hidden initially) -->
+                    <div class="booking-success-view hidden" id="booking-success">
+                        <div class="success-icon-badge">
+                            <i class="fa-solid fa-calendar-circle-check"></i>
+                        </div>
+                        <h3>¡Cita Solicitada con Éxito!</h3>
+                        <p class="success-desc">
+                            Gracias <strong id="success-patient">Paciente</strong>. Hemos reservado provisionalmente tu cita para el <span id="success-date">25 de mayo</span> a las <span id="success-time">10:30 AM</span>.
+                        </p>
+                        <div class="success-steps">
+                            <p><i class="fa-solid fa-circle-check text-success"></i> Tu cita se registró temporalmente. Haz clic en el botón verde de abajo para enviarla y confirmarla de inmediato vía WhatsApp.</p>
+                            <p><i class="fa-solid fa-envelope-open-text text-primary"></i> También te enviaremos los detalles de confirmación a tu correo.</p>
+                        </div>
+                        <a href="#" id="whatsapp-confirm-btn" target="_blank" rel="noopener noreferrer" class="btn-whatsapp w-100 mt-2">
+                            Confirmar por WhatsApp <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <button class="btn-secondary w-100 mt-1" onclick="resetBookingForm()">Programar otra cita</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PREGUNTAS FRECUENTES (FAQ) -->
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Dudas Frecuentes</span>
+                    <h2 class="section-title">Preguntas Comunes</h2>
+                    <p class="section-desc">Encuentra respuestas rápidas a los cuestionamientos habituales sobre las consultas y mi metodología.</p>
+                </div>
+
+                <div class="faq-container">
+                    <!-- FAQ 1 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>¿En qué consiste la primera consulta de valoración?</span>
+                            <i class="fa-solid fa-plus faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>En la primera consulta, realizamos una historia clínica profunda. Evaluamos tus hábitos de alimentación actuales, tus niveles de energía, calidad de sueño, digestión, antecedentes familiares y análisis de laboratorio si los tienes. Con esto, definimos tus metas y creamos el primer plan adaptado a tu metabolismo y rutina diaria.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>¿Las consultas pueden ser en modalidad online?</span>
+                            <i class="fa-solid fa-plus faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>¡Sí, por supuesto! Ofrecemos videoconsultas a través de plataformas seguras como Zoom o Google Meet. El plan de alimentación, las recomendaciones de estilo de vida y el seguimiento se envían de forma inmediata en formato PDF premium a tu correo y WhatsApp.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>¿Voy a tener que comer cosas difíciles de conseguir o caras?</span>
+                            <i class="fa-solid fa-plus faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>De ninguna manera. Mi filosofía se basa en el consumo de comida real, local y accesible. Todos los menús se adaptan al presupuesto de cada paciente y se diseñan con ingredientes comunes que puedes encontrar en cualquier mercado o supermercado habitual.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>¿Trabajas con dietas de restricción absoluta como keto o ayuno extremo?</span>
+                            <i class="fa-solid fa-plus faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No promuevo dietas restrictivas ni soluciones mágicas a corto plazo. Si bien puedo integrar herramientas específicas como el ayuno intermitente o alimentación cetogénica de forma terapéutica y temporal, mi enfoque principal es enseñarte hábitos sostenibles a largo plazo que disfrutes y puedas mantener toda la vida.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA (FOOTER) -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#hero" class="footer-logo">
+                    <i class="fa-solid fa-seedling"></i>
+                    <span>Andrea Otañez</span>
+                </a>
+                <p class="footer-brand-desc">
+                    Especialista en nutrición funcional y clínica. Ayudándote a recuperar tu salud de raíz y construir una relación saludable con la comida.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/_nutriandrea/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="#about">Sobre Mí</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#tools">Herramientas</a></li>
+                    <li><a href="#recipes">Recetario</a></li>
+                    <li><a href="#testimonials">Testimonios</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-hours">
+                <h4>Horario de Atención</h4>
+                <ul>
+                    <li><span>Lunes a Viernes:</span> 09:00 AM - 07:00 PM</li>
+                    <li><span>Sábados:</span> 09:00 AM - 02:00 PM</li>
+                    <li><span>Domingos:</span> Cerrado</li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>Newsletter Saludable</h4>
+                <p>Recibe tips de nutrición, recetas prácticas y novedades directo en tu buzón.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('¡Inscripción exitosa a la Newsletter!'); this.reset();">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit"><i class="fa-regular fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2026 Lic. Andrea Otañez Varela. Todos los derechos reservados. Diseñado profesionalmente.</p>
+                <div class="footer-legal-links">
+                    <a href="#">Aviso de Privacidad</a>
+                    <a href="#">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- RECIPE DETAIL MODAL (MODAL DE RECETA) -->
+    <div class="recipe-modal" id="recipe-modal">
+        <div class="modal-overlay" onclick="closeRecipeModal()"></div>
+        <div class="modal-card">
+            <button class="modal-close" onclick="closeRecipeModal()"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-body" id="modal-content-body">
+                <!-- Se inyecta dinámicamente desde JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Script de interactividad -->
+    <script src="app.js"></script>
+</body>
+</html>
